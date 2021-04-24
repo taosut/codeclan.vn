@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="bg-black pt-24 md:pt-40 pb-24 font-serif">
+  <div class="container mx-auto px-4">
+    <div class="md:grid md:grid-cols-12 md:gap-8 relative">
+      <div class="col-span-5">
+        <a href="/" class="flex items-center mb-6">
+          <img class="mr-3" src="/img/icons/arrow-btn-left-white.svg" alt="Icono flecha hacia izquierda">
+          <span class="text-base font-sans font-bold text-white">Volver al inicio</span>
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">Contacto</h1>
+        <h2 class="text-xl md:text-2xl text-wkGray leading-relaxed mb-20">Agenda una reunión con nuestro Director de Marketing.</h2>
+        <article class="text-white bg-secondary py-6 px-10 text-center">
+          <img src="/img/alejandro-aboy.png" alt="Alejandro Aboy" class="block w-20 -mt-16 m-auto border-4 border-primary rounded-full">
+          <h4 class="text-2xl font-bold mb-1 pt-4">Alejandro Aboy</h4>
+          <a href="mailto:a@thewhoknows.com" target="_blank" class="block text-primary">a@thewhoknows.com</a>
+        </article>
+      </div>
+      <div class="col-span-6 col-start-7">
+        <p class="text-center text-wkGray mb-6">Si no funciona el calendario, <a href="https://calendly.com/alejandro-aboy/30min" target="_blank" class="text-primary underline font-bold">ábrelo aquí</a></p>
+        <iframe src="https://calendly.com/alejandro-aboy/30min" style="width: 100%; border: none; min-height: 550px;"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

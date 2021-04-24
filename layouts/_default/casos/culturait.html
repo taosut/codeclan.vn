@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="bg-black pt-24 md:pt-40 pb-24 font-serif">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+      <a href="/casos/" class="flex items-center mb-6">
+        <img class="mr-3" src="/img/icons/arrow-btn-left-white.svg" alt="Icono flecha hacia izquierda">
+        <span class="text-base font-sans font-bold text-white">Ver todos los casos</span>
+      </a>
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-8">Ayudando a una software factory a generar más oportunidades de ventas con un sistema de automatizaciones B2B.</h1>
+      <div class="flex items-end">
+        <div class="md:mr-8">
+          <span class="block text-base leading-relaxed text-wkGray">Cliente:</span>
+          <p class="text-2xl font-bold text-white">CulturaIT</p>
+        </div>
+        <div>
+          <div class="bg-secondary py-2 px-6 rounded-full shadow-md inline-block mx-2">
+            <span class="text-center block text-sm font-bold text-wkGray">Growth Marketing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="overflow-x-hidden bg-white py-32">
+  <div class="container mx-auto px-4">
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16">
+      <h3 class="text-3xl md:text-4xl font-bold text-black leading-tight col-span-4 mb-6 md:mb-0" data-aos="fade-right" data-aos-duration="950">Ideamos:</h3>
+      <div class="col-span-8" data-aos="fade-left" data-aos-duration="950">
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Trabajamos un blog para generar piezas de valor para altos cargos IT de empresas de +200 empleados de Argentina. La estrategia consistía en identificar problemas en el desarrollo IT y llamar la atención de estos prospectos a través de varios impactos vía email automation, LinkedIn automation y newsletters con contenido útil para hacer su experiencia laboral IT más fructífera.</p>
+      </div>
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16">
+      <h3 class="text-3xl md:text-4xl font-bold text-black leading-tight col-span-4 mb-6 md:mb-0" data-aos="fade-right" data-aos-duration="950">MVP & Producto:</h3>
+      <div class="col-span-8" data-aos="fade-left" data-aos-duration="950">
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Generamos un blog con contenido quincenal para impactar con poca frecuencia pero con contenidos interesantes. Además, producimos una librería de recursos IT para generar mayor atención sobre Cultura IT y su autoridad como software factory de argentina.</p>
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Estos contenidos se crearon a partir de un trabajo inicial de rediseño web con enfoque no sólo en la parte de contenidos sino también institucional. Generando una base de nuevo sitio, mes a mes iteramos sobre el mismo para lograr no sólo un espacio completo de contenidos de valor, sino también un sitio institucional que reemplazó al sitio que Cultura IT utilizaba al momento.</p>
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Para movilizar estos contenidos mencionados, utilizamos el feed de Linkedin para realizar publicaciones, el InMail de Linkedin para generar conversaciones que deriven en reuniones y email automation para lograr un doble impacto que derive a una oportunidad comercial.</p>
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Por otro lado, realizamos una gacetilla de prensa para impactar a periodistas a través de email automation capturados de LinkedIn para generar mayor awareness sobre el valor de la empresa.</p>
+      </div>
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16">
+      <h3 class="text-3xl md:text-4xl font-bold text-black leading-tight col-span-4 mb-6 md:mb-0" data-aos="fade-right" data-aos-duration="950">Resultados:</h3>
+      <div class="col-span-8" data-aos="fade-left" data-aos-duration="950">
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Una base de datos en constante iteración y crecimiento de +500 gerentes IT que son impactados semanalmente con newsletters y secuencias de mail, logrando generar entre 5 y 10 reuniones por mes promedio con oportunidad de negocio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ partial "contact-cta.html" . }}
+{{ end }}

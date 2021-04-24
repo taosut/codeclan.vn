@@ -1,0 +1,68 @@
+{{ define "main" }}
+<section class="bg-black pt-24 md:pt-40 pb-24 font-serif">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+      <a href="/casos/" class="flex items-center mb-6">
+        <img class="mr-3" src="/img/icons/arrow-btn-left-white.svg" alt="Icono flecha hacia izquierda">
+        <span class="text-base font-sans font-bold text-white">Ver todos los casos</span>
+      </a>
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-8">Creando una web app que logre modernizar un nicho del ámbito jurídico</h1>
+      <div class="flex items-end">
+        <div class="md:mr-8">
+          <span class="block text-base leading-relaxed text-wkGray">Cliente:</span>
+          <p class="text-2xl font-bold text-white">FucerNet</p>
+        </div>
+        <div>
+          <div class="bg-secondary py-2 px-6 rounded-full shadow-md inline-block mx-2">
+            <span class="text-center block text-sm font-bold text-wkGray">UX Sprints</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="overflow-x-hidden bg-white py-32">
+  <div class="container mx-auto px-4">
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16">
+      <h3 class="text-3xl md:text-4xl font-bold text-black leading-tight col-span-4 mb-6 md:mb-0" data-aos="fade-right" data-aos-duration="950">El caso:</h3>
+      <div class="col-span-8" data-aos="fade-left" data-aos-duration="950">
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Fucer, una fundación enfocada en el ámbito jurídico y registral, tenía el objetivo de sumar a su cartera de ofertas educativas un producto digital B2C que reúna toda la normativa relevante para el ámbito.</p>
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Así es como nació FucerNet, una aplicación web con un modelo de suscripción mensual a la que un usuario puede acceder a una base de datos de normativas relevantes del rubro mediante un motor de búsqueda.</p>
+      </div>
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16" data-aos="fade-up" data-aos-duration="950">
+      <img class="block w-full col-span-12 rounded-lg shadow-lg" src="/img/casos/fucernet/fucernet-ui.jpg" alt="Capturas de pantalla de UI de FucerNet">
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-24">
+      <h4 class="col-span-8 col-start-3 text-2xl font-bold text-black pt-10 pb-4">Lo que hicimos:</h4>
+      <article class="col-span-8 col-start-3 relative mb-4" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+        <div class="bg-wkWhite relative z-10 py-10 px-8">
+          <h4 class="font-bold text-black text-xl leading-tight">Ideación de producto y estrategia comercial</h4>
+        </div>
+        <div class="w-full h-full border border-secondary absolute z-0 top-1 left-1"></div>
+      </article>
+      <article class="col-span-8 col-start-3 relative mb-4" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+        <div class="bg-wkWhite relative z-10 py-10 px-8">
+          <h4 class="font-bold text-black text-xl leading-tight mb-4">UX Design</h4>
+          <p class="text-base leading-relaxed text-secondary mb-4">Organización de contenido y copywriting. Wireframing. Prototyping. UI.</p>
+        </div>
+        <div class="w-full h-full border border-secondary absolute z-0 top-1 left-1"></div>
+      </article>
+      <article class="col-span-8 col-start-3 relative mb-4" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+        <div class="bg-wkWhite relative z-10 py-10 px-8">
+          <h4 class="font-bold text-black text-xl leading-tight">Desarrollo</h4>
+          <p class="text-base leading-relaxed text-secondary mb-4">Front end. Back end. Integración con Payment Gateway y modelo de suscripciones. PWA.</p>
+        </div>
+        <div class="w-full h-full border border-secondary absolute z-0 top-1 left-1"></div>
+      </article>
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-24">
+      <h4 class="col-span-8 col-start-3 text-2xl font-bold text-black pt-10">Resultados</h4>
+      <div class="col-span-8 col-start-3">
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Una PWA accesible desde cualquier dispositivo desktop y mobile con un sistema de suscripciones mensuales automatizadas y una base de datos de contenidos accesible desde un motor de búsqueda y un listado de contenidos favoritos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ partial "contact-cta.html" . }}
+{{ end }}

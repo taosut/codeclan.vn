@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="bg-black pt-24 md:pt-40 pb-24 font-serif">
+  <div class="container mx-auto px-4">
+    <div class="md:grid md:grid-cols-12 md:gap-8 relative">
+      <div class="col-span-12">
+        <a href="/" class="flex items-center mb-6">
+          <img class="mr-3" src="/img/icons/arrow-btn-left-white.svg" alt="Icono flecha hacia izquierda">
+          <span class="text-base font-sans font-bold text-white">Volver al inicio</span>
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">Calcular presupuesto</h1>
+        <h2 class="text-xl md:text-2xl text-wkGray leading-relaxed mb-20">Cuéntanos un poco sobre tu proyecto y calcularemos un presupuesto.</h2>
+        <p class="text-center text-wkGray mb-4">Si no funciona el chat, <a href="https://chats.landbot.io/v2/H-704991-UHEALNCWS2FDT6KQ/index.html" target="_blank" class="text-primary underline font-bold">ábrelo aquí</a></p>
+        <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+        <div id="myLandbot" style="width: 100%; height: 700px"></div>
+        <script>
+          var myLandbot = new LandbotFrameWidget({
+            container: '#myLandbot',
+            index: 'https://chats.landbot.io/v2/H-704991-UHEALNCWS2FDT6KQ/index.html',
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

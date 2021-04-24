@@ -1,0 +1,78 @@
+{{ define "main" }}
+<section class="bg-black pt-24 md:pt-40 pb-24 font-serif">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+      <a href="/casos/" class="flex items-center mb-6">
+        <img class="mr-3" src="/img/icons/arrow-btn-left-white.svg" alt="Icono flecha hacia izquierda">
+        <span class="text-base font-sans font-bold text-white">Ver todos los casos</span>
+      </a>
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-8">Diseñando un MVP para el seguimiento de ciudadanos durante la pandemia COVID-19</h1>
+      <div class="flex items-end">
+        <div class="md:mr-8">
+          <span class="block text-base leading-relaxed text-wkGray">Cliente:</span>
+          <p class="text-2xl font-bold text-white">Open Health</p>
+        </div>
+        <div>
+          <div class="bg-secondary py-2 px-6 rounded-full shadow-md inline-block mx-2">
+            <span class="text-center block text-sm font-bold text-wkGray">UX Sprints</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="overflow-x-hidden bg-white py-32">
+  <div class="container mx-auto px-4">
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16">
+      <h3 class="text-3xl md:text-4xl font-bold text-black leading-tight col-span-4 mb-6 md:mb-0" data-aos="fade-right" data-aos-duration="950">El caso:</h3>
+      <div class="col-span-8" data-aos="fade-left" data-aos-duration="950">
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Open Health es una iniciativa open source que surgió en plena pandemia mundial del COVID19. Con el objetivo de ayudar a los ciudadanos a transitar la pandemia, el equipo comenzó a trabajar sobre un producto digital enfocado en el seguimiento de los síntomas de los mismos, y en soluciones inteligentes para transitar de forma autorizada por la vía pública.</p>
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">Nos sumamos al equipo de Open Health durante un período agile de 2 meses en el que creamos un MVP flexible y adaptable a distintos contextos y necesidades de países de LATAM, como Panamá, Ecuador y Argentina.</p>
+      </div>
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16" data-aos="fade-up" data-aos-duration="950">
+      <img class="block w-full col-span-12 rounded-lg shadow-lg" src="/img/casos/openhealth/openhealth-styleguide-figma.jpg" alt="Imagen de styleguide/guía de estilos Figma">
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-24">
+      <h4 class="col-span-8 col-start-3 text-2xl font-bold text-black pt-10 pb-4">Lo que hicimos:</h4>
+      <article class="col-span-8 col-start-3 relative mb-4" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+        <div class="bg-wkWhite relative z-10 py-10 px-8">
+          <h4 class="font-bold text-black text-xl leading-tight">Estrategia de producto</h4>
+        </div>
+        <div class="w-full h-full border border-secondary absolute z-0 top-1 left-1"></div>
+      </article>
+      <article class="col-span-8 col-start-3 relative mb-4" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+        <div class="bg-wkWhite relative z-10 py-10 px-8">
+          <h4 class="font-bold text-black text-xl leading-tight">UX Design</h4>
+        </div>
+        <div class="w-full h-full border border-secondary absolute z-0 top-1 left-1"></div>
+      </article>
+      <article class="col-span-8 col-start-3 relative mb-4" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+        <div class="bg-wkWhite relative z-10 py-10 px-8">
+          <h4 class="font-bold text-black text-xl leading-tight">UI Development</h4>
+        </div>
+        <div class="w-full h-full border border-secondary absolute z-0 top-1 left-1"></div>
+      </article>
+      <article class="col-span-8 col-start-3 relative mb-4" data-aos="fade-up" data-aos-duration="950" data-aos-anchor-placement="top-bottom">
+        <div class="bg-wkWhite relative z-10 py-10 px-8">
+          <h4 class="font-bold text-black text-xl leading-tight">Landing page</h4>
+        </div>
+        <div class="w-full h-full border border-secondary absolute z-0 top-1 left-1"></div>
+      </article>
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16" data-aos="fade-up" data-aos-duration="950">
+      <img class="block w-full col-span-12 rounded-lg shadow-lg" src="/img/casos/openhealth/openhealth-ui.jpg" alt="Imagen de UI o User Interface de Open Health">
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-24">
+      <h4 class="col-span-8 col-start-3 text-2xl font-bold text-black pt-10">Resultados</h4>
+      <div class="col-span-8 col-start-3">
+        <p class="text-lg md:text-xl leading-relaxed mb-4 text-secondary">OpenHealth logró generar un producto open source y versátil en formato de PWA y Native, adaptable a situaciones de distintos países y ciudades, como Buenos Aires, Guayaquil, y Panamá.</p>
+      </div>
+    </div>
+    <div class="md:grid md:grid-cols-12 md:gap-8 mb-16" data-aos="fade-up" data-aos-duration="950">
+      <img class="block w-full col-span-12 rounded-lg shadow-lg" src="/img/casos/openhealth/openhealth-landing-page.jpg" alt="Capturas de pantalla de landing page">
+    </div>
+  </div>
+</section>
+{{ partial "contact-cta.html" . }}
+{{ end }}

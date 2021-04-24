@@ -1,0 +1,155 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  font-family: 'Lora', serif;
+}
+
+@media(min-width: 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+.has-dropdown ul {
+  transition: all 200ms ease-in;
+  width: 230px;
+  display: none;
+}
+.has-dropdown:hover > ul {
+  display: block;
+}
+
+@media(min-width:768px) {
+  .has-dropdown ul {
+    left: 50%;
+    transform: translate(-50%, -1px);
+    opacity: 0;
+    display: block;
+  }
+  .has-dropdown:hover > ul {
+    opacity: 1;
+    transform: translate(-50%, 1px);
+  }
+}
+
+.menu {
+  top: 113px;
+  left: 0;
+}
+
+@media(max-width: 767px) {
+  .menu {
+    opacity: 0;
+    pointer-events: none;;
+    transition: all 200ms ease-in;
+  }
+  .menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #header {
+    transition: all 200ms ease-in;
+  }
+  #header.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Blog */
+.single h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #211A39;
+  padding: 25px 0;
+}
+
+.single h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #211A39;
+  padding: 25px 0 16px;
+}
+
+.single p {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 12px 0;
+}
+
+.single img {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+}
+
+.single ul {
+  padding: 12px 0;
+  list-style: none;
+}
+
+.single ul li {
+  padding-left: 20px;
+  position: relative;
+  font-size: 20px;
+  color: #494261;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.single ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  background-image: url('/img/icons/list-disc.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.single a {
+  font-weight: bold;
+  color: #F43072;
+  text-decoration: underline;
+  transition: all 200ms ease-in;
+}
+.single a:hover {
+  color: #494261;
+}
+
+.scroll-down-line {
+  width: 2px;
+  height: 300px;
+  margin-top: -150px;
+  background: #F43072;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vs:after {
+  content: url('/img/icons/vs.svg');
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-arrow-underline:after {
+  content: url('/img/icons/arrow-btn-underline.svg');
+  display: block;
+}

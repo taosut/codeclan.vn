@@ -1,0 +1,9 @@
+baseURL = "https://thewhoknows.com"
+languageCode = "en-us"
+title = "WhoKnows"
+
+[permalinks]
+  blog = "/blog/:filename:"
+
+[params]
+  dateFormat = "2006-01-02"  
